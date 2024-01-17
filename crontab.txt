@@ -1,0 +1,52 @@
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+
+01 00	* * *	username    php build_queues.php
+
+* *	* * *	username    php process_queue_emails_to_send.php 0 20
+* *	* * *	username    php process_queue_emails_to_send.php 1 20
+* *	* * *	username    php process_queue_emails_to_send.php 2 20
+* *	* * *	username    php process_queue_emails_to_send.php 3 20
+* *	* * *	username    php process_queue_emails_to_send.php 4 20
+* *	* * *	username    php process_queue_emails_to_send.php 5 20
+* *	* * *	username    php process_queue_emails_to_send.php 6 20
+* *	* * *	username    php process_queue_emails_to_send.php 7 20
+* *	* * *	username    php process_queue_emails_to_send.php 8 20
+* *	* * *	username    php process_queue_emails_to_send.php 9 20
+* *	* * *	username    php process_queue_emails_to_send.php 10 20
+* *	* * *	username    php process_queue_emails_to_send.php 11 20
+* *	* * *	username    php process_queue_emails_to_send.php 12 20
+* *	* * *	username    php process_queue_emails_to_send.php 13 20
+* *	* * *	username    php process_queue_emails_to_send.php 14 20
+* *	* * *	username    php process_queue_emails_to_send.php 15 20
+* *	* * *	username    php process_queue_emails_to_send.php 16 20
+* *	* * *	username    php process_queue_emails_to_send.php 17 20
+* *	* * *	username    php process_queue_emails_to_send.php 18 20
+* *	* * *	username    php process_queue_emails_to_send.php 19 20
+
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 0 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 1 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 2 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 3 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 4 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 5 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 6 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 7 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 8 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 9 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 10 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 11 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 12 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 13 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 14 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 15 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 16 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 17 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 18 20
+* *	* * *	username    php process_queue_emails_to_check_is_valid.php 19 20
